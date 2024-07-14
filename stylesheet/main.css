@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* TAGS- Generic CSS */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+/* common classes */
+
+.flex{
+    display: flex;
+}
+
+.justify-content{
+    justify-content: space-between;
+}
+
+.align-items{
+    align-items: center;
+}
+
+/* header */
+header{
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid palevioletred;
+    background-color: rgba(216, 112, 147, 0.233);
+}
+
+.header-container{
+    margin: 10px 20px;
+    position: relative;
+    padding: 5px;
+   
+}
+
+nav{
+    width: 40%;
+}
+
+nav ul li a:hover{
+    color: palevioletred;
+}
+
+.mail{
+    position: absolute;
+    right: 0;
+}
+
+.mail-button{
+    padding: 2px;
+}
+
+.mail a span{
+    padding: 2px;
+    color: palevioletred;
+}
+
+/* main */
+home{
+    height: 100vh;
+}
+
+.intro-text {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+
+.intro-text span{
+    display: block;
+    font-size: 8em;
+    font-weight: 800;
+    color: palevioletred;
+    text-shadow: 8px 8px rgba(216, 112, 147, 0.233);
+}
+
+.job-title{
+    position: absolute;
+    top: 43%;
+    left: 55%;
+}
+
+
+.job-title p{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.star1,
+.star2,
+.star3{
+    position: absolute;
+    /* display: none; */
+}
+
+.job-title:hover{
+
+    .star1{
+        animation-name: move1;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+    }
+
+    .star2{
+        animation-name: move2;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+    }
+
+    .star3{
+        animation-name: move3;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes move1{
+    0%{
+        transform: translate3d(-5px, 5px, 5px);
+    }
+    25%{
+        transform: translate3d(-10px, 10px, 10px);
+    }
+    50%{
+        transform: translate3d(-15px, 15px, 15px);
+    }
+    100%{
+        transform: translate3d(-20px, 20px, 20px);
+    }
+}
+
+
+@keyframes move2{
+    0%{
+        transform: translate3d(5px, 5px, -5px);
+    }
+    25%{
+        transform: translate3d(10px, 10px, -10px);
+    }
+    50%{
+        transform: translate3d(15px, 15px, -15px);
+    }
+    100%{
+        transform: translate3d(20px, 20px, -20px);
+    }
+}
+
+@keyframes move3{
+    0%{
+        transform: translate3d(0, -5px, 5px);
+    }
+    25%{
+        transform: translate3d(0, -10px, 10px);
+    }
+    50%{
+        transform: translate3d(0, -15px, 15px);
+    }
+    100%{
+        transform: translate3d(0, -20px, 20px);
+    }
+}
+
+
+.star1{
+    top: 60%;
+}
+
+.star2{
+    top: 40%;
+    left: 60%;
+}
+
+.star3{
+    left: 40%;
+}
