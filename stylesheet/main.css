@@ -223,16 +223,22 @@ nav ul li a:hover{
 .line{
     position: relative;
     width: 80%;
-    height: 1vh;
+    height: 0.5vh;
     margin: 0 auto;
     border-radius: 8px;
     background-color: rgba(216, 112, 147, 0.541);
 }
 
 .education-container{
-    height: 100vh;
+
 }
 
+.education-container h1{
+    font-size: 4em;
+    font-weight: 700;
+    color: palevioletred;
+    text-shadow: 5px 5px rgba(216, 112, 147, 0.233);
+}
 
 .dot1,
 .dot2,
@@ -260,6 +266,7 @@ nav ul li a:hover{
 .ed-2,
 .ed-3{
     position: absolute;
+    background-color: rgba(216, 112, 147, 0.005);
 }
 
 .ed-1{
@@ -269,7 +276,6 @@ nav ul li a:hover{
     border: 1px solid palevioletred;
     bottom: -130px;
     left: -100px;
-    
 }
 
 .ed-2{
@@ -278,7 +284,7 @@ nav ul li a:hover{
     border-radius: 16px;
     border: 1px solid palevioletred;
     top: -140px;
-    right: 30px;
+    left: -150px;
 }
 .ed-3{
     width: 350px;
@@ -287,4 +293,22 @@ nav ul li a:hover{
     border: 1px solid palevioletred;
     bottom: -180px;
     right: -100px;
+}
+
+
+.ed-1:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 15px 10px  rgba(216, 112, 147, 0.541);
+    transition: 1.5s;
+
+}
+.ed-2:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 15px 10px  rgba(216, 112, 147, 0.541);
+    transition: 1.5s;
+}
+.ed-3:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 15px 10px  rgba(216, 112, 147, 0.541);
+    transition: 1.5s;
 }
