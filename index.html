@@ -6,15 +6,19 @@
     <title>Yukta Dandeva</title>
     <link rel="stylesheet" href="stylesheet/main.css" />
     <script src="scripts/logic.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <header>
       <div class="header-container flex">
         <nav>
           <ul class="flex justify-content align-items">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href=".home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
@@ -47,9 +51,18 @@
     <div class="home">
       <div class="intro-text">
         <div class="intro-container">
-          <span>Hello .</span>
-          <span>I am</span>
-          <span>Yukta</span>
+          <div class="flex">
+            <span>H</span><span>e</span><span>l</span> <span>l</span
+            ><span>o</span><span>.</span>
+          </div>
+          <div class="flex">
+            <span>I</span><span>&nbsp;a</span><span>m</span>
+          </div>
+
+          <div class="flex">
+            <span>Y</span><span>u</span><span>k</span><span>t</span
+            ><span>a</span>
+          </div>
         </div>
       </div>
       <div class="job-title">
@@ -113,11 +126,8 @@
       </div>
     </div>
 
-    <div class="about">
-      <div class="about-container flex">
-        <div class="img-div flex justify-content align-items">
-          <img src="utils/yukta.png" alt="" />
-        </div>
+    <div class="about" id="about">
+      <div class="about-container">
         <div class="about-content">
           <h2>About me</h2>
           <p>
@@ -126,84 +136,76 @@
             to use my skills while also learning to grow.
           </p>
         </div>
-      </div>
 
-      <div class="education">
-        <div class="education-container">
-          <h1>Education</h1>
-          <div class="flex justify-content align-items">
-            <div class="line">
-              <div class="dot1">
-                <div class="ed-1">
-                  <h4>10TH CBSE</h4>
-                  <h2>Bal Bharti School, Bgarh</h2>
-                  <p>98.2%</p>
+        <div class="education">
+          <div class="education-container justify-content align-items">
+            <h1>Education</h1>
+            <div class="education-card flex">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <h6>2019-2020</h6>
+                    BAL BHARTI SCHOOL, Bgarh
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    10TH CBSE
+                  </h6>
+                  <p class="card-text">98.2%</p>
                 </div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="palevioletred"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-sparkle"
-                >
-                  <path
-                    d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
-                  />
-                </svg>
               </div>
-              <div class="dot2">
-                <div class="ed-2">
-                  <h4>12TH CBSE</h4>
-                  <h2>Siddhartha Public School, Delhi</h2>
-                  <p>96.6%</p>
+
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <h6>2020-2022</h6>
+                    SIDDHARTHA PUBLIC SCHOOL, Delhi
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    12TH CBSE
+                  </h6>
+                  <p class="card-text">96.6%</p>
                 </div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="palevioletred"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-sparkle"
-                >
-                  <path
-                    d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
-                  />
-                </svg>
               </div>
-              <div class="dot3">
-                <div class="ed-3">
-                  <h4>Bachelor of Technology, Computer Science</h4>
-                  <h2>Maharaja Surajmal Institute of Technology, Delhi</h2>
-                  <p>8.7 cgpa</p>
+
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <h6>2022-2026</h6>
+                    MAHARAJA SURAJMAL INSTITUTE OF TECHNOLOGY, Delhi
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    Bachelor of Technology, Computer Science
+                  </h6>
+                  <p class="card-text">8.7 cgpa</p>
                 </div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="palevioletred"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-sparkle"
-                >
-                  <path
-                    d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
-                  />
-                </svg>
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="skills">
+          <h1>Skills</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects" id="projects">
+      <div class="project-container">
+        <h1>Projects</h1>
+        <div class="grid">
+          <div class="img1">
+            <div class="overlay">
+              <h3>text-description</h3>
+            </div>
+            <div class="p1-i">
+              <img src="utils/music-app.jpeg" alt="" />
+              <h2>MUSIC-APP</h2>
+            </div>
+          </div>
+          <div class="img2"></div>
+          <div class="img3"></div>
+          <div class="img4"></div>
+          <div class="img5"></div>
         </div>
       </div>
     </div>
