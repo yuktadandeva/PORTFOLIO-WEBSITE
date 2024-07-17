@@ -42,6 +42,7 @@ header{
     height: 7vh;
     border-bottom: 1px solid palevioletred;
     background-color: rgba(216, 112, 147, 0.233);
+    z-index: 2;
 }
 
 .header-container{
@@ -311,7 +312,7 @@ nav ul li a:hover{
     width: 100%;
     display: none;
 }
-.p1-i:hover .overlay{
+.img1:hover .overlay{
     display: block;
     transition: 1s;
 }
