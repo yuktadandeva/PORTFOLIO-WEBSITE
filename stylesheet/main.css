@@ -210,7 +210,14 @@ nav ul li a:hover{
 
 /* about */
 
+.about{
+    padding: 10px;
+    background-color: rgba(216, 112, 147, 0.233);
+}
+
 .about-container{
+    z-index: 2;
+    background-color: white;
     width: 70%;
     /* height: 90vh; */
     padding: 40px;
@@ -340,7 +347,7 @@ nav ul li a:hover{
     height: 100%;
     width: 100%;
     display: none;
-    z-index: 100;
+    z-index: 1;
 }
 .img1:hover .overlay{
     display: block;
@@ -353,6 +360,14 @@ nav ul li a:hover{
     grid-row: span 2;
     overflow: hidden;
 } 
+
+.img3:hover .overlay{
+    display: block;
+    transition: 1s;
+}
+.img3:hover .p1-i h2{
+    display: none;
+}
 
 .projects h1{
     text-align: center;
@@ -368,4 +383,48 @@ nav ul li a:hover{
 .contact-container{
     background-color: rgba(216, 112, 147, 0.233);
     height: 80vh;
+    padding: 40px;
+    position: relative;
+}
+
+.contact-container h1{
+    text-align: center;
+    font-size: 4em;
+    color:  rgba(216, 112, 147, 0.516);
+}
+
+.contact-container .bunnies{
+    width: 20%;
+    position: absolute;
+    right: 15%;
+    top: 30%;
+}
+.contact-container .bunnies:hover{
+    transform: translateX(5px);
+    transition: 1s;
+}
+
+.links a img{
+    width: 3rem;
+    margin: 5px;
+}
+
+.links {
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+
+.links .icon{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 2px solid palevioletred;
+    padding: 10px;
+    background-color: rgba(236, 53, 114, 0.251);
+    margin: 10px;
+}
+
+.link .icon:hover{
+    box-shadow: 0px 5px 0px palevioletred;
 }
